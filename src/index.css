@@ -21,7 +21,7 @@ body {
 
 #shows-container {
   display: flex;
-  margin: 10px 40px;
+  margin: 10px 50px;
   flex-wrap: wrap;
 }
 
@@ -38,6 +38,6 @@ body {
   background-color: rgb(34, 33, 33);
   height: 30px;
   width: 100vw;
+  position: absolute;
   bottom: 0;
-  margin-top: 190px;
 }
