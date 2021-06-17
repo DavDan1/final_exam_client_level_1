@@ -9,8 +9,12 @@ describe('User can see list of shows', () => {
   describe('User can see page layout', () => {
     it('Shows page layout', () => {
       cy.get('[data-cy=header]').within(() => {
-        cy.get('[data-cy=viaplay-logo]').should('have.attr', 'src', 'https://kundservice.viaplay.se/wp-content/themes/viaplaycs/assets/dist/images/viaplay_white.svg')
-      })
+        cy.get('[data-cy=viaplay-logo]').should(
+          'have.attr',
+          'src',
+          'https://kundservice.viaplay.se/wp-content/themes/viaplaycs/assets/dist/images/viaplay_white.svg'
+        );
+      });
       cy.get('[data-cy=shows-container]').should('exist');
       cy.get('[data-cy=footer]').should('exist');
     });
@@ -20,7 +24,8 @@ describe('User can see list of shows', () => {
     it('Displays a list of shows', () => {
       cy.get('[data-cy=shows-container]').within(() => {
         cy.get('[data-cy=show-card]').should('have.length', 10);
-        cy.get('[data-cy=show-card-0]')
+        cy.get('[data-cy=show-card]')
+          .first()
           .find('img')
           .should(
             'have.attr',
