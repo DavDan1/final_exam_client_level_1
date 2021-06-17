@@ -58,3 +58,10 @@ The ```nth-child``` selector takes one argument which accesses the index of the 
 In this case when we are using this formula: ```(4n+4)```, where the first *4* represents a cycle size, *n* is a counter that starts at 0 and *4* is the offset value. So we access all child elements which index is a multiple of 4. 
 
 **Good luck and Happy Coding.**
+
+
+## User story
+as a user 
+in order to decide what to watch
+i want to have a selection of titles to choose from
+
