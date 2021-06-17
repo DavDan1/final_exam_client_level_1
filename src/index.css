@@ -7,7 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#header {
+  display: flex;
+  background-color: #000;
+  height: 40px;
+  align-items: center;
+}
+
+.viaplay-logo {
+  margin-left: 50px;
+  height: 30px;
 }
