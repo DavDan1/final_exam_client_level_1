@@ -18,3 +18,18 @@ body {
   margin-left: 50px;
   height: 30px;
 }
+
+#shows-container {
+  display: flex;
+  margin: 10px 40px;
+  flex-wrap: wrap;
+}
+
+.show-card {
+  height: 120px;
+  margin: 5px;
+}
+
+.show-img {
+ height: 120px;
+}

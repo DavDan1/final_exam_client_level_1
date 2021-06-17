@@ -20,7 +20,7 @@ const ShowContainer = () => {
   let show = shows.map((show) => {
     return (
       <div className='show-card' data-cy='show-card'>
-        <img src={show.content.images.boxart.url} alt='series illustration' />
+        <img className='show-img' src={show.content.images.landscape.url} alt='series illustration' />
       </div>
     );
   });
