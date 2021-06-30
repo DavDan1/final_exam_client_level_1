@@ -23,7 +23,11 @@ const Movies = () => {
       </div>
     );
   });
-  return <div class='display-show' data-cy='movie-container'>{movie}</div>;
+  return (
+    <div class='display-show' data-cy='movie-container'>
+      {movie}
+    </div>
+  );
 };
 
 export default Movies;
