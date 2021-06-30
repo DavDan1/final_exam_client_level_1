@@ -8,7 +8,7 @@ describe('User can see list of the movies', () => {
 
   describe('User can see the main page', () => {
     it('Shows main page', () => {
-      cy.get('[data-cy=header]').within(() => {
+      cy.get('[data-cy=header-container]').within(() => {
         cy.get('[data-cy=viaplay-logo]').should(
           'have.attr',
           'src',
@@ -16,10 +16,13 @@ describe('User can see list of the movies', () => {
         );
       });
     });
-    it('is expexted to show 10 movies', () => {
-      cy.get('[data-cy=movie-container]').within(() => {
-        cy.get('[data-cy=movies]').should('have.length', 10);
+    
+  });
+  describe('User can see all the movies', () => {
+      it('is expexted to show 10 movies', () => {
+        cy.get('[data-cy=movie-container]').within(() => {
+          cy.get('[data-cy=movies]').should('have.length', 10);
+        });
       });
     });
-  });
 });
